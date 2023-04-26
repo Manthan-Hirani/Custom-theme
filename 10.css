@@ -1,24 +1,14 @@
-img {
-    vertical-align: middle;
-}
-
-.title-small {
-    color: #003f63;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.title-main {
+.title-heading {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 40px;
+    line-height: 50px;
     letter-spacing: -1px;
+    padding-bottom: 10px;
 }
 
 /* Button start*/
-.custom-btn {
+/* .custom-btn {
     color: #fff;
     border-radius: 5px;
     padding: 11px 32px;
@@ -60,6 +50,33 @@ img {
     border-radius: 50%;
     background: #003f63;
     border-width: 0px;
-}
+} */
 
 /* Button End */
+
+.contact-sec {
+    background: #003f63;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contact-btn {
+    color: #003f63;
+    border-radius: 5px;
+    padding: 11px 32px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+
+.btn-contact {
+    background: #fff;
+    border: none;
+    z-index: 1;
+}   
