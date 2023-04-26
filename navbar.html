@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- <header>
+        <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light" style="top: 0px;">
+            <div class="container-fluid nav-header-container px-5">
+                <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" class="default-logo" alt="aspire-logo">
+                    </a>
+                </div>
+                <div class="col-auto col-lg-8 menu-order px-lg-0">
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">Industries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">What we do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">Casestudies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-dark">Career</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-2 "></div>
+                <div class="col-auto col-lg-2 ">
+                    <div class="header-social-icon d-flex justify-content-end align-items-center">
+                        <div class="search-modern">
+                            <div class="search-wrap">
+                                <a class="search-btn openBtn px-4" href="#" onclick="openSearch()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                        viewBox="0 0 24 24" fill="none" stroke="#003f63" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div id="myOverlay" class="overlay shadow-sm">
+                                <div class="search-header">
+                                    <span class="search-header-logo"><img src="images/logo.png" alt=""></span>
+                                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
+                                            viewBox="0 0 24 24" fill="none" stroke="#003f63" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="search_form_wrap">
+                                    <form role="search" method="get" class="search_form" action="#&quot;"
+                                        data-inited-validation="1">
+                                        <input type="text" class="search_field fill_inited"
+                                            placeholder="Type words and hit enter" value="">
+                                        <button type="submit" class="search_submit"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                                viewBox="0 0 24 24" fill="none" stroke="#003f63" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-search">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn-menu" onclick="openNav()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 24 24"
+                                    fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-menu">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </button>
+                            <div id="myNav" class="overlay-menu" style="width: 0%;">
+                                <button class="closebtn" onclick="closeNav()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px"
+                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                                <div class="overlay-menu-item">
+                                    <a href="#">About</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+</body>
+</html>
