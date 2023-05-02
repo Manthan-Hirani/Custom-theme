@@ -7,7 +7,7 @@ window.addEventListener('scroll', function () {
 
     }
     else {
-        nav.style.top = '0';
+        nav.style.top = '0px';
 
     }
     lastScrollTop = scrollTop;
@@ -19,10 +19,12 @@ function openSearch() {
 }
 function closeSearch() {
     document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("myOverlay").style.width = "0";
+    document.getElementById("myOverlay").style.height = "0";
 }
 
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "50%";
 }
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
